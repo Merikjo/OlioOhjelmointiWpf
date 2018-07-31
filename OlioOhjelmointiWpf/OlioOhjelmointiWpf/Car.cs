@@ -12,19 +12,53 @@ namespace OlioOhjelmointiWpf
         public string Matkustajat { get; set; }
         public bool Running { get; set; }
         public bool RadioOn { get; set; }
+        public string Model { get; set; }
+
+        private int maxSpeed; //kenttä, mikä on tyhjä. Kenttä on tiedon tallennuspaikka ja vie muistia. Ominaisuus ei vie muistia, koska se vain viittaa kenttään.
+
+        public int MaxSpeed {
+            get
+            {
+                return maxSpeed;
+            }
+            set
+            {
+                if ((value > 0) && (value < 500)) //value korvautuu sillä arvolla, joka sille asetetaan, joko käyttöliittymän kautta asetettu tai kovakoodattu arvo.
+                {
+                    maxSpeed = value;
+                }
+                else
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+            }
+        }
 
         public int Vauhti { get; set; }
 
-        public void Start()
+        public void Start() //metodi
         {
             Running = true;
             RadioOn = true;
         }
 
-        public void Stop()
+        public void Stop() //metodi
         {
             Running = false;
             Vauhti = 0;
         }
+
+        //internal void SetMaxSpeed(int max)
+        //{
+        //    if ((max > 0) && (max < 500))
+        //    {
+        //        MaxSpeed = max;
+        //    }
+            
+        //    else
+        //    {
+        //        throw new ArgumentOutOfRangeException("max");
+        //    }
+        //}
     }
 }

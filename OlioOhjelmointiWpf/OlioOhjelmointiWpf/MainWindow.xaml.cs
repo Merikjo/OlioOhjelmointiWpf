@@ -24,7 +24,7 @@ namespace OlioOhjelmointiWpf
         public int luku = 123;
 
         //Car luokan alustaminen
-        public Car auto1 = new Car(); //auto1 = muuttuja
+        public Car auto1 = new Car(); //auto1 = muuttuja l. instanssi
         public Car auto2 = new Car();
 
         public DispatcherTimer VauhtiTimer = new DispatcherTimer();
@@ -37,10 +37,19 @@ namespace OlioOhjelmointiWpf
             auto1.Color = "Punainen";
             auto2.Color = "Musta";
 
+            //auto1.SetMaxSpeed(160);
+            auto1.MaxSpeed = 160;
+   
+            auto1.Model = "Volvo";
+            auto2.Model = "Audi";
+
+            int maxSpeed = int.Parse(maxSpeedTextBox.Text);
+
             VauhtiTimer.Tick += AutoKiihtyy_Tick;
             VauhtiTimer.Tick += AutoKiihtyy_Tick2;
             VauhtiTimer.Interval = new TimeSpan(0, 0, 1);
         }
+       
 
         private void AutoKiihtyy_Tick(object sender, EventArgs e)
         {
@@ -56,7 +65,7 @@ namespace OlioOhjelmointiWpf
         private void btnAuto1_Click(object sender, RoutedEventArgs e)
         {
             //määritellään apumuuttuja:
-            string viesti = "Auto 1 on väriltään " +
+            string viesti = "Auto 1 on väriltään " + auto1.MaxSpeed +
                 auto1.Color + ", auto on käynnissä: " +
                 auto1.Running + " Matkustajaluettelo: " + auto1.Matkustajat +
                 " auton vauhti on tällä hetkellä: " + auto1.Vauhti;

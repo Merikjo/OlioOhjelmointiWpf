@@ -23,6 +23,7 @@
         <Button x:Name="btnPoistaMatkustaja2" Content="Poista matkustaja" HorizontalAlignment="Left" Height="30" Margin="396,308,0,0" VerticalAlignment="Top" Width="116" Click="btnPoistaMatkustaja2_Click"/>
         <TextBox x:Name="txtMatkustajat" HorizontalAlignment="Left" Height="70" Margin="298,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
         <TextBox x:Name="txtMatkustajat2" HorizontalAlignment="Left" Height="70" Margin="526,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="maxSpeedTextBox" HorizontalAlignment="Left" Height="61" Margin="32,148,0,0" TextWrapping="Wrap" Text="200" VerticalAlignment="Top" Width="105"/>
 
     </Grid>
 </Window>
