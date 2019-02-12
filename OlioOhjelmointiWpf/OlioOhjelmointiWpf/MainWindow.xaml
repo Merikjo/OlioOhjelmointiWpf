@@ -7,23 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnAuto1" Content="Auto 1" HorizontalAlignment="Left" Margin="138,71,0,0" VerticalAlignment="Top" Width="183" Height="64" Click="btnAuto1_Click" Background="#FFB61E1E"/>
-        <Button x:Name="btnAuto2" Content="Auto 2" HorizontalAlignment="Left" Margin="373,71,0,0" VerticalAlignment="Top" Width="198" Height="64" Click="btnAuto2_Click" Background="#FF746D6D"/>
-        <Button x:Name="btnStartAuto1" Content="Käynnistä" HorizontalAlignment="Left" Margin="166,166,0,0" VerticalAlignment="Top" Width="127" Height="41" Click="btnStartAuto1_Click"/>
-        <Button x:Name="btnStopAuto1" Content="Sammuta" HorizontalAlignment="Left" Margin="166,356,0,0" VerticalAlignment="Top" Width="127" Height="41" Click="btnStopAuto1_Click"/>
-        <Button x:Name="btnStartAuto2" Content="Käynnistä" HorizontalAlignment="Left" Margin="396,166,0,0" VerticalAlignment="Top" Width="116" Height="43" Click="btnStartAuto2_Click"/>
-        <Button x:Name="btnStopAuto2" Content="Sammuta" HorizontalAlignment="Left" Margin="396,356,0,0" VerticalAlignment="Top" Width="116" Height="41" Click="btnStopAuto2_Click"/>
-        <Label x:Name="lblVauhti" Content="0" HorizontalAlignment="Left" Height="56" Margin="138,10,0,0" VerticalAlignment="Top" Width="183" FontSize="36"/>
-        <Label x:Name="lblVauhti2" Content="0" HorizontalAlignment="Left" Height="74" Margin="373,10,0,0" VerticalAlignment="Top" Width="198" FontSize="36"/>
-        <Button x:Name="btnAjaAuto1" Content="Aja" HorizontalAlignment="Left" Height="35" Margin="166,216,0,0" VerticalAlignment="Top" Width="127" Click="btnAjaAuto1_Click"/>
-        <Button x:Name="btnAjaAuto2" Content="Aja" HorizontalAlignment="Left" Height="33" Margin="396,218,0,0" VerticalAlignment="Top" Width="116" Click="btnAjaAuto2_Click"/>
-        <Button x:Name="btnLisaaMatkustaja" Content="Lisää matkustaja" HorizontalAlignment="Left" Height="35" Margin="166,268,0,0" VerticalAlignment="Top" Width="127" Click="btnLisaaMatkustaja_Click"/>
-        <Button x:Name="btnLisaaMatkustaja2" Content="Lisää matkustaja" HorizontalAlignment="Left" Margin="396,268,0,0" VerticalAlignment="Top" Width="116" Height="35" Click="btnLisaaMatkustaja2_Click"/>
-        <Button x:Name="btnPoistaMatkustaja" Content="Poista matkustaja" HorizontalAlignment="Left" Height="30" Margin="166,308,0,0" VerticalAlignment="Top" Width="127" Click="btnPoistaMatkustaja_Click"/>
-        <Button x:Name="btnPoistaMatkustaja2" Content="Poista matkustaja" HorizontalAlignment="Left" Height="30" Margin="396,308,0,0" VerticalAlignment="Top" Width="116" Click="btnPoistaMatkustaja2_Click"/>
-        <TextBox x:Name="txtMatkustajat" HorizontalAlignment="Left" Height="70" Margin="298,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
-        <TextBox x:Name="txtMatkustajat2" HorizontalAlignment="Left" Height="70" Margin="526,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
-        <TextBox x:Name="maxSpeedTextBox" HorizontalAlignment="Left" Height="61" Margin="32,148,0,0" TextWrapping="Wrap" Text="200" VerticalAlignment="Top" Width="105"/>
+        <Button x:Name="btnAuto1" Content="Auto 1" HorizontalAlignment="Left" Margin="137,51,0,0" VerticalAlignment="Top" Width="170" Height="102" Click="btnAuto1_Click" Background="#FFB61E1E"/>
+        <Button x:Name="btnAuto2" Content="Auto 2" HorizontalAlignment="Left" Margin="520,51,0,0" VerticalAlignment="Top" Width="170" Height="102" Click="btnAuto2_Click" Background="#FF746D6D"/>
+        <Button x:Name="btnStartAuto1" Content="Käynnistä Auto1" HorizontalAlignment="Left" Margin="137,164,0,0" VerticalAlignment="Top" Width="170" Height="41" Click="btnStartAuto1_Click"/>
+        <Button x:Name="btnStopAuto1" Content="Sammuta Auto1" HorizontalAlignment="Left" Margin="137,256,0,0" VerticalAlignment="Top" Width="170" Height="41" Click="btnStopAuto1_Click"/>
+        <Button x:Name="btnStartAuto2" Content="Käynnistä Auto2" HorizontalAlignment="Left" Margin="518,168,0,0" VerticalAlignment="Top" Width="170" Height="43" Click="btnStartAuto2_Click"/>
+        <Button x:Name="btnStopAuto2" Content="Sammuta Auto2" HorizontalAlignment="Left" Margin="520,256,0,0" VerticalAlignment="Top" Width="168" Height="41" Click="btnStopAuto2_Click"/>
+        <Label x:Name="lblVauhti1" Content="0" HorizontalAlignment="Left" Height="56" Margin="32,66,0,0" VerticalAlignment="Top" Width="100" FontSize="36"/>
+        <Label x:Name="lblVauhti2" Content="0" HorizontalAlignment="Left" Height="59" Margin="423,63,0,0" VerticalAlignment="Top" Width="92" FontSize="36"/>
+        <Button x:Name="btnAjaAuto1" Content="Aja Auto1" HorizontalAlignment="Left" Height="35" Margin="137,216,0,0" VerticalAlignment="Top" Width="170" Click="btnAjaAuto1_Click"/>
+        <Button x:Name="btnAjaAuto2" Content="Aja Auto 2" HorizontalAlignment="Left" Height="33" Margin="518,218,0,0" VerticalAlignment="Top" Width="168" Click="btnAjaAuto2_Click"/>
+        <Button x:Name="btnLisaaMatkustaja" Content="Lisää matkustaja" HorizontalAlignment="Left" Height="35" Margin="137,313,0,0" VerticalAlignment="Top" Width="127" Click="btnLisaaMatkustaja_Click"/>
+        <Button x:Name="btnLisaaMatkustaja2" Content="Lisää matkustaja" HorizontalAlignment="Left" Margin="523,315,0,0" VerticalAlignment="Top" Width="168" Height="35" Click="btnLisaaMatkustaja2_Click"/>
+        <Button x:Name="btnPoistaMatkustaja" Content="Poista matkustaja" HorizontalAlignment="Left" Height="30" Margin="137,361,0,0" VerticalAlignment="Top" Width="127" Click="btnPoistaMatkustaja_Click"/>
+        <Button x:Name="btnPoistaMatkustaja2" Content="Poista matkustaja" HorizontalAlignment="Left" Height="30" Margin="523,361,0,0" VerticalAlignment="Top" Width="168" Click="btnPoistaMatkustaja2_Click"/>
+        <TextBox x:Name="txtMatkustajat" HorizontalAlignment="Left" Height="76" Margin="269,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+        <TextBox x:Name="txtMatkustajat2" HorizontalAlignment="Left" Height="76" Margin="696,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="maxSpeedTextBox" HorizontalAlignment="Left" Height="61" Margin="10,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" Text="200"/>
+        <Image x:Name="CarBlue" HorizontalAlignment="Left" Height="102" Margin="531,51,0,0" VerticalAlignment="Top" Width="157" Source="Images/car-blue.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Images/car-blue.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="CarRed" HorizontalAlignment="Left" Height="102" Margin="150,51,0,0" VerticalAlignment="Top" Width="157" Source="Images/car-red.png"/>
+        <TextBox x:Name="txtValoAuto1" HorizontalAlignment="Left" Height="102" Margin="326,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <Button x:Name="btnValoAuto1" Content="Puolivalot" HorizontalAlignment="Left" Height="41" Margin="326,164,0,0" VerticalAlignment="Top" Width="59" Click="BtnValoAuto1_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="94" Margin="518,303,0,0" VerticalAlignment="Top" Width="253"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="94" Margin="137,303,0,0" VerticalAlignment="Top" Width="203"/>
+        <TextBox x:Name="txtValoAuto2" HorizontalAlignment="Left" Height="102" Margin="696,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
 
     </Grid>
 </Window>

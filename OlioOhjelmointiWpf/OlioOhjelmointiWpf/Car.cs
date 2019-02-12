@@ -13,6 +13,10 @@ namespace OlioOhjelmointiWpf
         public bool Running { get; set; }
         public bool RadioOn { get; set; }
         public string Model { get; set; }
+        public string Valo { get; set; }
+
+        public bool ValoKytkin { get; set; }
+        public int Vauhti { get; set; }
 
         private int maxSpeed; //kenttä, mikä on tyhjä. Kenttä on tiedon tallennuspaikka ja vie muistia. Ominaisuus ei vie muistia, koska se vain viittaa kenttään.
 
@@ -23,7 +27,7 @@ namespace OlioOhjelmointiWpf
             }
             set
             {
-                if ((value > 0) && (value < 500)) //value korvautuu sillä arvolla, joka sille asetetaan, joko käyttöliittymän kautta asetettu tai kovakoodattu arvo.
+                if ((value > 0) && (value < 201)) //value korvautuu sillä arvolla, joka sille asetetaan, joko käyttöliittymän kautta asetettu tai kovakoodattu arvo.
                 {
                     maxSpeed = value;
                 }
@@ -34,7 +38,7 @@ namespace OlioOhjelmointiWpf
             }
         }
 
-        public int Vauhti { get; set; }
+     
 
         public void Start() //metodi
         {
@@ -48,13 +52,38 @@ namespace OlioOhjelmointiWpf
             Vauhti = 0;
         }
 
+        public void ValoPaalla(int ValonTila) //metodi
+        {
+            if (ValonTila != 0) //parametri ! = not l. kielto eli ei ole yhtäsuuri
+            {
+                Valo = ValonTila.ToString();  //
+            }
+            else Valo = "ERROR";  //virhetilanne
+        }
+
+        public void ValoPois() //metodi l. toiminto
+                                //mikä arvo on valolla
+        {
+            ValoKytkin = false;
+            Valo = "OFF";
+        }
+
+
+
+
+
+
+
+
+
+
         //internal void SetMaxSpeed(int max)
         //{
         //    if ((max > 0) && (max < 500))
         //    {
         //        MaxSpeed = max;
         //    }
-            
+
         //    else
         //    {
         //        throw new ArgumentOutOfRangeException("max");
